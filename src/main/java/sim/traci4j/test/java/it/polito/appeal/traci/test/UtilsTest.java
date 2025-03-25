@@ -47,6 +47,7 @@ public class UtilsTest {
 		after.add("D");
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testGetAddedItems() {
 		Set<String> expected = new HashSet<String>();
@@ -55,6 +56,7 @@ public class UtilsTest {
 		assertThat(added, equalTo(expected));
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testGetRemovedItems() {
 		Set<String> expected = new HashSet<String>();

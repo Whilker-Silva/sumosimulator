@@ -227,6 +227,7 @@ public class TraCITest extends SingleSimTraCITest {
 	 * 
 	 * @throws IOException
 	 */
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testOneVehicleAtStepOne() throws IOException {
 		conn.nextSimStep();
@@ -239,6 +240,7 @@ public class TraCITest extends SingleSimTraCITest {
 	 * 
 	 * @throws IOException
 	 */
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testVehicleIDAtStepOne() throws IOException {
 		conn.nextSimStep();
@@ -1054,6 +1056,7 @@ public class TraCITest extends SingleSimTraCITest {
 		assertEquals("rend", edges.get(3).getID());
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testVehicleGetLaneIndex() throws IOException {
 		/*
@@ -1065,7 +1068,8 @@ public class TraCITest extends SingleSimTraCITest {
 
 		assertThat(firstVehicle.getLaneIndex(), equalTo(0));
 	}
-
+	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testVehicleGetLaneID() throws IOException {
 		getFirstVehicle();

@@ -49,6 +49,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
  * @author Enrico Gueli &lt;enrico.gueli@polito.it&gt;
  *
  */
+@SuppressWarnings("deprecation")
 class SumoHttpRetriever {
 	
 	private URL configURL;
